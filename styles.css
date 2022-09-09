@@ -1,0 +1,95 @@
+@font-face {
+    font-family: Cursed Timer;
+    src: url(./assets/fonts/CursedTimerUlil-Aznm.ttf);
+}
+
+:root{
+      --state_background: #1B244A;
+      --dark: #000000;
+      --dark-pink:#F94F6D;
+      --white: #E5E5E5;
+      --lime: #60731e;
+      --sm: 20px;
+      --md: 40px;
+      --lg: 90px;
+      --timer: "Cursed Timer";
+      --anton: 'Anton', sans-serif;
+      --roboto: 'Roboto', sans-serif;
+
+}
+
+body{
+    margin:0;
+    background-color: var(--white);
+    display: grid;
+    place-items: center;
+}
+
+.container{
+    display: flex;
+    /* grid-template-rows: auto 1fr auto; */
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+    position: absolute;
+    background-color: var(--state_background);
+    top: 10px;
+    width: 575px;
+    height:385px;
+    border: 10px solid var(--lime);
+    border-radius: 16px;
+}
+.dashboard{
+    display: grid;
+    place-items: center;
+}
+
+.dashboard p{
+    font-family: var(--anton);
+    font-size: var(--md);
+    font-style: normal;
+    font-weight: 700;
+    color: var(--white);
+    text-align: center;
+    padding: 4px 4px;
+    margin: 16px 16px;
+
+}
+
+.score{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    background: var(--dark);
+    height: 120px;
+    width: 155px;
+    margin-bottom: 12px;
+    border-radius: 8px;
+}
+
+.score span{
+    align-self: flex-end;
+    font-family: var(--timer);
+    font-size: var(--lg);
+    color: var(--dark-pink);
+}
+
+.score-buttons{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: space-between;
+    gap: 12px;
+}
+
+.score-btn{
+    background-color: var(--state_background);
+    border: 1px solid;
+    border-radius: 8px;
+    color: var(--white);
+    font-family: var(--timer);
+    font-size: var(--sm);
+    font-weight: 100;
+    width: 42px;
+    height: 42px;
+
+}

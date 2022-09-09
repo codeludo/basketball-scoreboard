@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Baseball scoreboard</title>
+  </head>
+  <body>
+    <div class="container">
+      <div id="dashboard-home" class="dashboard">
+        <p>HOME</p>
+        <div class="score">
+          <span id="score-home">0</span>
+        </div>
+        <div id="add-score-home" class="score-buttons">
+          <button id="btn-home-1" class="score-btn">+1</button>
+          <button id="btn-home-2" class="score-btn">+2</button>
+          <button id="btn-home-3" class="score-btn">+3</button>
+        </div>
+      </div>
+      <div id="dashboard-guest" class="dashboard">
+        <p>GUEST</p>
+        <div class="score">
+          <span id="score-guest">0</span>
+        </div>
+        <div id="add-score-guest" class="score-buttons">
+          <button id="btn-guest-1" class="score-btn">+1</button>
+          <button id="btn-guest-2" class="score-btn">+2</button>
+          <button id="btn-guest-3" class="score-btn">+3</button>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="./script.js"></script>
+</html>
